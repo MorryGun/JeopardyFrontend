@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-title>
+        <span>New Player</span>
+    </mat-card-title>
+    <mat-card-content>
+        <form>
+            <mat-form-field class="fullWidth">
+                <mat-label>Name</mat-label>
+                <input mat-input [(ngModel)]="player.name" name="player.name" matInput placeholder="Add player name">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button color="primary" (click)="add(player)" mat-button>POST</button>
+    </mat-card-actions>
+</mat-card>
